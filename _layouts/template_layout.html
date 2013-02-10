@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+ ================================================== -->
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
+<!-- Mobile Specific
+ ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+ ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+
+<!-- Java Script
+ ================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/ender.min.js"></script>
+<script src="js/selectnav.js"></script>
+<script src="js/imagebox.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/twitter.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/effects.js"></script>
+
+</head>
+<body id="{{page.name}}">
+
+<!-- Header -->
+<div id="header">
+  <!-- 960 Container Start -->
+  <div class="container ie-dropdown-fix">
+    <!-- Logo -->
+    <div class="four columns" id="logo-layout">
+      <a href="/index.html"><img src="images/gestorama.1.png" alt="Gestorama" /></a>
+    </div>
+    <!-- Main Navigation Start -->
+    <div class="twelve columns">
+      <div id="navigation">
+        <ul id="nav">
+          <li><a href="contabilidad.html" {% if page.name == 'Contabilidad' %} id="current" {% endif %}>Contabilidad</a></li>
+          <li><a href="laboral.html" {% if page.name == 'Laboral' %} id="current" {% endif %}>Laboral</a>
+            <ul>
+              <li><a href="#">Altas y Bajas</a></li>
+              <li><a href="#">Contratos</a></li>
+              <li><a href="#">Nóminas</a></li>
+            </ul>
+          </li>
+          <li><a href="trafico.html" {% if page.name == 'Trafico' %} id="current" {% endif %}>Tráfico</a></li>
+          <li><a href="extranjeria.html" {% if page.name == 'Extranjeria' %} id="current" {% endif %}>Extranjería</a></li>
+          <li><a href="tributacion.html" {% if page.name == 'Tributacion' %} id="current" {% endif %}>Tributación</a></li>
+          <li><a href="consultoria.html" {% if page.name == 'Consultoria' %} id="current" {% endif %}>Consultoría</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main Navigation End -->
+  </div>
+  <!-- 960 Container End -->
+</div>
+<!-- End Header -->
+
+{{ content }}
+
+{% if page.name != "Gestorama" %}
+  <!-- 960 Container -->
+  <div class="container">
+    <!-- 16 Columns -->
+    <div class="sixteen columns" style="padding: 10px; min-height:300px;">
+      <p>En estos momentos la página de {{ page.name }} está en proceso. Disculpen las molestias. </p>
+    </div>
+    <!-- 16 Columns End -->
+  </div>
+  <!-- 960 Container End -->
+{% endif %}
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+<!-- Imagebox Build -->
+<script src="js/imagebox.build.js"></script>
+
+</body>
+</html>

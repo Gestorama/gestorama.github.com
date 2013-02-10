@@ -8,13 +8,11 @@
 /* Import Section
 ================================================================ */
 @import url("base.css");				/* Default Reset, Typography, Forms, etc. */
-@import url("gestorama.css");
 @import url("skeleton.css");			/* 960 Grid + Media Query Layouts */
 @import url("flexslider.css");			/* Flex Slider Styles */
 @import url("pricing_tables.css");		/* Pricing Table Styles */
 @import url("imagebox.css");			/* Responsive Lightbox */
 @import url("shortcodes.css");			/* Shortcode Styles */
-
 
 /* =============================================================== */
 /* Miscellaneous Site Styles
@@ -1179,4 +1177,31 @@ a.feed span {
 	.client-logo img {width: 149px; height: auto;}
 	.custom-slide {height: 193px;}
 	.avatar {height: 25px; width: 25px;}
+}
+
+/* Gestorama Styles */
+
+body{
+    text-align:center;
+}
+
+#logo {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-top: -59px;
+   margin-left: -304px;
+   border: none;
+}
+
+#logo img{
+  border:  none;
+}
+
+#logo-layout{
+  margin-top: 20px !important;
+}
+
+#Gestorama .container{
+	min-height: 300px;
 }
