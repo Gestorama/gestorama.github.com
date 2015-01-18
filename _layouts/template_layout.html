@@ -8,8 +8,15 @@
 <!-- Basic Page Needs
  ================================================== -->
 <meta charset="utf-8">
+
+{% if page.index %}
+  <meta http-equiv="refresh" content="0;url=/pages/contacto.html" />
+{% endif %}
+
 <title>{{ page.title }}</title>
-{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+{% endif %}
 
 <!-- Mobile Specific
  ================================================== -->
@@ -49,8 +56,8 @@
     <div class="twelve columns">
       <div id="navigation">
         <ul id="nav">
-          <li><a href="contabilidad.html" {% if page.name == 'Contabilidad' %} id="current" {% endif %}>Contabilidad</a></li>
-          <li><a href="laboral.html" {% if page.name == 'Laboral' %} id="current" {% endif %}>Laboral</a>
+          <li><a href="/contabilidad.html" {% if page.name == 'Contabilidad' %} id="current" {% endif %}>Contabilidad</a></li>
+          <li><a href="/laboral.html" {% if page.name == 'Laboral' %} id="current" {% endif %}>Laboral</a>
             <ul>
               <li><a href="#">Altas y Bajas</a></li>
               <li><a href="#">Contratos</a></li>
