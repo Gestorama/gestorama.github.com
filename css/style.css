@@ -157,7 +157,7 @@ h5.headline {
 	padding: 31px 10px 28px 10px;
 	margin: 0 5px;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 14px;
 	border-bottom: 3px solid transparent;
 }
 
@@ -1180,6 +1180,10 @@ a.feed span {
 }
 
 /* Gestorama Styles */
+
+body {
+	font-size: 14px;
+}
 
 #logo {
    position: fixed;
